@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "netlify deploy --prod"
   },
   "author": "shweta",
   "license": "ISC",
   "dependencies": {
     "date-format": "^4.0.14",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "netlify-cli": "^12.12.0",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.1.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
